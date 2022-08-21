@@ -4,7 +4,7 @@ desktop_navigation_bar_enabled:
   description: "Enable desktop navigation bar."
 nav_bar_item_rounding:
   type: string
-  default: "0"
+  default: "0px"
   description: "Change navigation bar item rounding (border-radius). You can use px, em etc..."
 nav_bar_item_bg:
   type: string
@@ -29,7 +29,7 @@ nav_bar_item_active_color:
 nav_bar_items_border_bottom_size:
   type: string
   default: "3px"
-  description: "Change navigation bar items border bottom size."
+  description: "Change navigation bar items border bottom size. Set 0px to disable border bottom."
 nav_bar_items_border_bottom_color:
   type: string
   default: "transparent"
