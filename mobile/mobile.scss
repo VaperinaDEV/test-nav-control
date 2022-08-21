@@ -147,9 +147,10 @@ body.nav-controls-hidden {
         bottom: -60px;
         transition: bottom 0.25s ease-in;
         @if $custom-nav-control-buttons-enabled == "true" {
+          bottom: -70px;
           @if $nav-control-buttons-vertical-align == "true" {
             bottom: #{$nav-control-buttons-bottom-position};
-            right: -60px;
+            right: -70px;
             transition: right 0.25s ease-in;
           }
         }
