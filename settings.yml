@@ -2,6 +2,10 @@ desktop_navigation_bar_enabled:
   type: bool
   default: false
   description: "Enable desktop navigation bar."
+nav_bar_item_rounding:
+  type: string
+  default: "0"
+  description: "Change navigation bar item rounding (border-radius). You can use px, em etc..."
 nav_bar_item_bg:
   type: string
   default: "transparent"
