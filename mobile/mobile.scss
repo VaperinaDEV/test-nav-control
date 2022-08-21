@@ -5,6 +5,9 @@ body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
   .list-controls {
     .navigation-container {
       @if $desktop-navigation-bar-enabled == "true" {
+        #navigation-bar {
+          margin-bottom: 0;
+        }
         .nav-pills {
           > li {
             margin-right: 0.5em;
