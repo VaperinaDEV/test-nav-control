@@ -6,12 +6,12 @@ body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
     .navigation-container {
       @if $desktop-navigation-bar-enabled == "true" {
         #navigation-bar {
-          margin-bottom: 0;
+          margin-bottom: 1em;
+          margin-top: -0.25em;
         }
         .nav-pills {
           > li {
             margin-right: 0.5em;
-            margin-bottom: 0.5em;
             border: none;
             a {
               transition: none;
