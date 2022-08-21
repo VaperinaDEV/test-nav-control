@@ -63,7 +63,7 @@ body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
           box-shadow: none;
           background: transparent;
           align-items: center;
-          @if $nav-control-buttons-vertical-align {
+          @if $nav-control-buttons-vertical-align == "true" {
             display: flex;
             flex-direction: column;
             transition: right 0.25s ease-in;
@@ -134,13 +134,13 @@ body.nav-controls-hidden {
   &[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
     .list-controls {
       .navigation-container .navigation-controls {
-        bottom: calc(#{$nav-control-buttons-bottom-position} - 60px);
+        bottom: calc(-#{$nav-control-buttons-bottom-position} - 60px);
         transition: bottom 0.25s ease-in;
         @if $custom-nav-control-buttons-enabled == "true" {
-          bottom: calc(#{$nav-control-buttons-bottom-position} - 60px);
-          @if $nav-control-buttons-vertical-align {
+          bottom: calc(-#{$nav-control-buttons-bottom-position} - 60px);
+          @if $nav-control-buttons-vertical-align == "true" {
             bottom: #{$nav-control-buttons-bottom-position};
-            right: calc(#{$nav-control-buttons-right-position} - 60px);
+            right: calc(-#{$nav-control-buttons-right-position} - 60px);
             transition: right 0.25s ease-in;
           }
         }
