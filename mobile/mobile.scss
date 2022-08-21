@@ -57,14 +57,14 @@ body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
           display: none;
         }
       }
-      @if $circle_buttons_enabled == "true" {
+      @if $custom_buttons_enabled == "true" {
         .navigation-controls {
           box-shadow: none;
           background: transparent;
           align-items: center;
           .btn:not(#create-topic) {
             padding: 0.75em 0.817em;
-            border-radius: 50%;
+            border-radius: #{$nav-control-buttons-rounding};
             background: #{$nav-control-buttons-bg};
             .d-icon {
               color: #{$nav-control-buttons-icon-color};
@@ -79,20 +79,20 @@ body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
           }
           #create-topic {
             padding: 1.5em;
-            border-radius: 50%;
-            background: #{$create-topic-bg};
+            border-radius: #{$create-topic-button-rounding};
+            background: #{$create-topic-button-bg};
             .d-icon {
               margin-right: 0;
-              color: #{$create-topic-icon-color};
+              color: #{$create-topic-button-icon-color};
             }
             .d-button-label {
               display: none;
             }
             &:hover,
             &:focus {
-              background: #{$create-topic-hover-bg};
+              background: #{$create-topic-button-hover-bg};
               .d-icon {
-                color: #{$create-topic-icon-hover-color};
+                color: #{$create-topic-button-icon-hover-color};
               }
             }
           }
