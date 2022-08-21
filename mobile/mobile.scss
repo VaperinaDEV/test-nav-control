@@ -16,7 +16,8 @@ body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
               border-radius: #{$nav-bar-item-rounding};
               border-bottom: #{$nav-bar-items-border-bottom-size} solid #{$nav-bar-items-border-bottom-color};
               padding: 0 #{$nav-bar-item-padding-size};
-              margin-right: 0.5em;
+              margin-right: 0.25em;
+              margin-bottom: 0.25em;
               background-color: #{$nav-bar-item-bg};
               color: #{$nav-bar-item-color};
               &:hover,
