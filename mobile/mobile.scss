@@ -65,6 +65,7 @@ body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
           @if $nav-control-buttons-vertical-align {
             display: flex;
             flex-direction: column;
+            transition: right 0.2s ease-in;
           }
           .btn:not(#create-topic) {
             padding: 0.75em 0.817em;
@@ -136,6 +137,10 @@ body.nav-controls-hidden {
         transition: bottom 0.2s ease-in;
         @if $custom-nav-control-buttons-enabled == "true" {
           bottom: -70px;
+          @if $nav-control-buttons-vertical-align {
+            right: -70px;
+            transition: right 0.2s ease-in;
+          }
         }
       }
     }
