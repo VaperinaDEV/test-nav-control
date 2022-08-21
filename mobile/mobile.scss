@@ -13,18 +13,20 @@ body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
               border-bottom: 3px solid transparent;
               padding: 0 0.25em;
               margin: 0.25em 0.5em;
+              background-color: #{$nav-bar-item-background-color};
+              color: #{$nav-bar-item-color};
               &:hover,
               &:focus,
               &.active {
-                background-color: transparent;
-                border-bottom-color: var(--quaternary);
+                background-color: #{$nav-bar-active-item-background-color};
+                border-bottom-color: #{$nav-bar-active-item-border-color};
               }
               &:hover {
-                color: var(--primary);
+                color: #{$nav-bar-item-hover-color};
               }
               &:focus,
               &.active {
-                color: var(--quaternary);
+                color: #{$nav-bar-active-item-color};
               }
             }
           }
@@ -137,10 +139,9 @@ body.nav-controls-hidden {
         bottom: -60px;
         transition: bottom 0.25s ease-in;
         @if $custom-nav-control-buttons-enabled == "true" {
-          bottom: calc(-#{$nav-control-buttons-bottom-position} - 60px);
           @if $nav-control-buttons-vertical-align == "true" {
             bottom: #{$nav-control-buttons-bottom-position};
-            right: calc(-#{$nav-control-buttons-right-position} - 60px);
+            right: -60px;
             transition: right 0.25s ease-in;
           }
         }
