@@ -78,10 +78,12 @@ body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
             }
           }
           #create-topic {
-            padding: 1.5em;
+            padding: 1.25em;
             border-radius: #{$create-topic-button-rounding};
             background: #{$create-topic-button-bg};
             .d-icon {
+              width: 1.25em;
+              height: 1.25em;
               margin-right: 0;
               color: #{$create-topic-button-icon-color};
             }
