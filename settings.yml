@@ -6,3 +6,35 @@ circle_buttons_enabled:
   type: bool
   default: false
   description: "Change navigation control buttons style to circle."
+nav_control_buttons_bg:
+  type: string
+  default: "var(--primary-medium)"
+  description: "Change navigation control buttons background color except create-topic button."
+nav_control_hover_buttons_bg:
+  type: string
+  default: "var(--primary-high)"
+  description: "Change navigation control buttons hover background color except create-topic button."
+nav_control_buttons_icon_color:
+  type: string
+  default: "var(--secondary)"
+  description: "Change navigation control buttons icon color except create-topic button icon color."
+nav_control_buttons_icon_hover_color:
+  type: string
+  default: "var(--primary-high)"
+  description: "Change navigation control buttons icon hover color except create-topic button icon color."
+create_topic_bg:
+  type: string
+  default: "var(--tertiary)"
+  description: "Change create topic button background color."
+create_topic_hover_bg:
+  type: string
+  default: "var(--tertiary)"
+  description: "Change create topic button hover background color."
+create_topic_icon_color:
+  type: string
+  default: "var(--secondary)"
+  description: "Change create topic button icon color."
+create_topic_icon_hover_color:
+  type: string
+  default: "var(--secondary)"
+  description: "Change create topic button icon hover color."
