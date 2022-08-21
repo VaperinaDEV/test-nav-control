@@ -7,6 +7,7 @@ body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
       @if $desktop-navigation-bar-enabled == "true" {
         .nav-pills {
           > li {
+            font-size: var(--font-0);
             border: none;
             a {
               transition: none;
