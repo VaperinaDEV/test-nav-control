@@ -62,23 +62,39 @@ body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
           box-shadow: none;
           background: transparent;
           align-items: center;
-          > *:not(:last-child) {
+          .btn:not(#create-topic) {
             padding: 0.75em 0.817em;
             border-radius: 50%;
+            background: #{$nav-control-buttons-bg};
+            .d-icon {
+              color: #{$nav-control-buttons-icon-color};
+            }
+            &:hover,
+            &:focus {
+              background: #{$nav-control-buttons-hover-bg};
+              .d-icon {
+                color: #{$nav-control-buttons-hover-icon-color};
+              }
+            }
           }
           #create-topic {
             padding: 1.5em;
             border-radius: 50%;
+            background: #{$create-topic-bg};
             .d-icon {
               margin-right: 0;
+              color: #{$create-topic-icon-color};
             }
             .d-button-label {
               display: none;
             }
-          }
-          .notifications-button .select-kit-header {
-            padding: 0.75em 0.817em;
-            border-radius: 50%;
+            &:hover,
+            &:focus {
+              background: #{$create-topic-hover-bg};
+              .d-icon {
+                color: #{$create-topic-icon-hover-color};
+              }
+            }
           }
         }
       }
