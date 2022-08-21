@@ -2,6 +2,30 @@ desktop_navigation_bar_enabled:
   type: bool
   default: false
   description: "Enable desktop navigation bar."
+nav_bar_item_bg:
+  type: string
+  default: "transparent"
+  description: "Change navigation bar item background color."
+nav_bar_item_color:
+  type: string
+  default: "var(--primary)"
+  description: "Change navigation bar item color."
+nav_bar_item_active_bg:
+  type: string
+  default: "transparent"
+  description: "Change navigation bar active item background color."
+nav_bar_item_hover_color:
+  type: string
+  default: "var(--primary)"
+  description: "Change navigation bar item hover color."
+nav_bar_item_active_color:
+  type: string
+  default: "var(--tertiary)"
+  description: "Change navigation bar active item color."
+nav_bar_item_border_active_color:
+  type: string
+  default: "var(--tertiary)"
+  description: "Change navigation bar active border color."
 custom_nav_control_buttons_enabled:
   type: bool
   default: false
