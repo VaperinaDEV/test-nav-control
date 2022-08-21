@@ -6,6 +6,10 @@ custom_nav_control_buttons_enabled:
   type: bool
   default: false
   description: "Change navigation control buttons style."
+nav_control_buttons_vertical_align:
+  type: bool
+  default: false
+  description: "Change navigation control buttons align to vertical."
 nav_control_buttons_rounding:
   type: string
   default: "50%"
