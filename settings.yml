@@ -22,6 +22,14 @@ nav_bar_item_active_color:
   type: string
   default: "var(--tertiary)"
   description: "Change navigation bar active item color."
+nav_bar_items_border_bottom_size:
+  type: string
+  default: "3px"
+  description: "Change navigation bar items border bottom size."
+nav_bar_items_border_bottom_color:
+  type: string
+  default: "transparent"
+  description: "Change navigation bar items border bottom color."
 nav_bar_item_border_active_color:
   type: string
   default: "var(--tertiary)"
