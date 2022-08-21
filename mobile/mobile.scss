@@ -62,6 +62,10 @@ body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
           box-shadow: none;
           background: transparent;
           align-items: center;
+          @if $nav-control-buttons-vertical-align {
+            display: flex;
+            flex-direction: column;
+          }
           .btn:not(#create-topic) {
             padding: 0.75em 0.817em;
             border-radius: #{$nav-control-buttons-rounding};
