@@ -5,7 +5,7 @@ desktop_navigation_bar_enabled:
 custom_nav_control_buttons_enabled:
   type: bool
   default: false
-  description: "Change navigation control buttons style to circle."
+  description: "Change navigation control buttons style."
 nav_control_buttons_rounding:
   type: string
   default: "50%"
