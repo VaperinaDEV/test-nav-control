@@ -9,11 +9,11 @@ nav_bar_item_rounding:
 nav_bar_item_bg:
   type: string
   default: "transparent"
-  description: "Change navigation bar item background color."
+  description: "Change navigation bar item background color except active item."
 nav_bar_item_color:
   type: string
   default: "var(--primary)"
-  description: "Change navigation bar item color."
+  description: "Change navigation bar item color except active item."
 nav_bar_item_active_bg:
   type: string
   default: "transparent"
@@ -21,7 +21,7 @@ nav_bar_item_active_bg:
 nav_bar_item_hover_color:
   type: string
   default: "var(--primary)"
-  description: "Change navigation bar item hover color."
+  description: "Change navigation bar item hover color except active item."
 nav_bar_item_active_color:
   type: string
   default: "var(--tertiary)"
@@ -33,7 +33,7 @@ nav_bar_items_border_bottom_size:
 nav_bar_items_border_bottom_color:
   type: string
   default: "transparent"
-  description: "Change navigation bar items border bottom color."
+  description: "Change navigation bar items border bottom color except active item."
 nav_bar_item_border_active_color:
   type: string
   default: "var(--tertiary)"
