@@ -32,8 +32,8 @@ body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
       }
       .navigation-controls {
         position: fixed;
-        bottom: 10px;
-        right: 10px;
+        bottom: #{$nav-control-buttons-bottom-position};
+        right: #{$nav-control-buttons-right-position};
         padding: 0.5em;
         grid-gap: 0.5em;
         margin-bottom: env(safe-area-inset-bottom);
@@ -41,7 +41,7 @@ body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
         box-sizing: border-box;
         box-shadow: shadow("card");
         background: var(--secondary);
-        transition: bottom 0.2s ease-in;
+        transition: bottom 0.25s ease-in;
         z-index: 200;
         > *:not(:last-child) {
           margin-right: 0;
@@ -59,13 +59,14 @@ body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
       }
       @if $custom-nav-control-buttons-enabled == "true" {
         .navigation-controls {
+          padding: 0;
           box-shadow: none;
           background: transparent;
           align-items: center;
           @if $nav-control-buttons-vertical-align {
             display: flex;
             flex-direction: column;
-            transition: right 0.2s ease-in;
+            transition: right 0.25s ease-in;
           }
           .btn:not(#create-topic) {
             padding: 0.75em 0.817em;
@@ -122,7 +123,7 @@ body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
   }
   #reply-control.draft {
     bottom: -60px;
-    transition: bottom 0.2s ease-in;
+    transition: bottom 0.25s ease-in;
   }
 }
 
@@ -134,13 +135,13 @@ body.nav-controls-hidden {
     .list-controls {
       .navigation-container .navigation-controls {
         bottom: -60px;
-        transition: bottom 0.2s ease-in;
+        transition: bottom 0.25s ease-in;
         @if $custom-nav-control-buttons-enabled == "true" {
           bottom: -70px;
           @if $nav-control-buttons-vertical-align {
             bottom: 10px;
             right: -70px;
-            transition: right 0.2s ease-in;
+            transition: right 0.25s ease-in;
           }
         }
       }
