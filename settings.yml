@@ -2,3 +2,7 @@ desktop_navigation_bar_enabled:
   type: bool
   default: false
   description: "Enable desktop navigation bar."
+circle_buttons_enabled:
+  type: bool
+  default: false
+  description: "Change navigation control buttons style to circle."
