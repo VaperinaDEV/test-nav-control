@@ -10,8 +10,8 @@ body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
             border: none;
             a {
               transition: none;
-              border-bottom: 3px solid transparent;
-              padding: 0 0.25em;
+              border-bottom: #{$nav-bar-items-border-bottom-size} solid #{$nav-bar-items-border-bottom-color};
+              padding: 0 0.5em;
               margin: 0.25em 0.5em;
               background-color: #{$nav-bar-item-bg};
               color: #{$nav-bar-item-color};
