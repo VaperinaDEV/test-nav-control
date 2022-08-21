@@ -20,7 +20,7 @@ nav_control_buttons_icon_color:
   description: "Change navigation control buttons icon color except create-topic button icon color."
 nav_control_buttons_icon_hover_color:
   type: string
-  default: "var(--primary-high)"
+  default: "var(--secondary)"
   description: "Change navigation control buttons icon hover color except create-topic button icon color."
 create_topic_bg:
   type: string
@@ -28,7 +28,7 @@ create_topic_bg:
   description: "Change create topic button background color."
 create_topic_hover_bg:
   type: string
-  default: "var(--tertiary)"
+  default: "var(--tertiary-hover)"
   description: "Change create topic button hover background color."
 create_topic_icon_color:
   type: string
