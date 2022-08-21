@@ -10,6 +10,14 @@ nav_control_buttons_vertical_align:
   type: bool
   default: false
   description: "Change navigation control buttons align to vertical."
+nav_control_buttons_bottom_position:
+  type: string
+  default: "1em"
+  description: "Change navigation control buttons bottom position. You can use px, em etc..."
+nav_control_buttons_right_position:
+  type: string
+  default: "1em"
+  description: "Change navigation control buttons right position. You can use px, em etc..."
 nav_control_buttons_rounding:
   type: string
   default: "50%"
