@@ -57,7 +57,7 @@ body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
           display: none;
         }
       }
-      @if $custom_nav_control_buttons_enabled == "true" {
+      @if $custom-nav-control-buttons-enabled == "true" {
         .navigation-controls {
           box-shadow: none;
           background: transparent;
@@ -115,7 +115,7 @@ body.nav-controls-hidden {
       .navigation-container .navigation-controls {
         bottom: -60px;
         transition: bottom 0.2s ease-in;
-        @if $custom_nav_control_buttons_enabled == "true" {
+        @if $custom-nav-control-buttons-enabled == "true" {
           bottom: -70px;
         }
       }
