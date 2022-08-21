@@ -10,7 +10,7 @@ nav_control_buttons_bg:
   type: string
   default: "var(--primary-medium)"
   description: "Change navigation control buttons background color except create-topic button."
-nav_control_hover_buttons_bg:
+nav_control_buttons_hover_bg:
   type: string
   default: "var(--primary-high)"
   description: "Change navigation control buttons hover background color except create-topic button."
