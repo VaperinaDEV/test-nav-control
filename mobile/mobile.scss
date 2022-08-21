@@ -13,7 +13,10 @@ body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
               font-size: var(--font-up-1);
               border-radius: #{$nav-bar-item-rounding};
               border-bottom: #{$nav-bar-items-border-bottom-size} solid #{$nav-bar-items-border-bottom-color};
-              padding: 0 0.35em;
+              padding-top: 0;
+              padding-bottom: 0;
+              padding-left: #{$nav-bar-item-rounding};
+              padding-right: #{$nav-bar-item-rounding};
               margin-right: 0.5em;
               background-color: #{$nav-bar-item-bg};
               color: #{$nav-bar-item-color};
