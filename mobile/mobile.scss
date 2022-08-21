@@ -10,9 +10,7 @@ body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
             border: none;
             a {
               transition: none;
-              font-size: var(--font-up-1);
-              min-height: 30px;
-              box-sizing: border-box;
+              font-size: var(--font-up-2);
               border-radius: #{$nav-bar-item-rounding};
               border-bottom: #{$nav-bar-items-border-bottom-size} solid #{$nav-bar-items-border-bottom-color};
               padding: 0 0.5em;
